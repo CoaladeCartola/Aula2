@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +7,26 @@
 </head>
 <body>
     <?php
-        $a =1;
-        $b =1;
-        $c = "Leo";
-        $d = "Leo";
-        $e = 3;
+        $nome = "fulano";
 
-        $a == $b;
+        switch ($nome) {
+            case "fulano":
+                echo "e ai fulano";
+            break;
 
-        $a === $b;
+            case "sicrano":
+                echo "e ai sicrano";
+            break;
 
-        $a != $c;
-        $a <> $b;
+            case "beltrano":
+                echo "e ai beltrano";
+            break;
 
-        $a < $b;
-
-        $b < $a;
-
-        $a <= $b;
-
-        $a >= $b;
-
-    ?>
+            default:
+                echo "qual é o seu nome";
+            break;
+         }
+         // resultado é: eae fulano
+         ?>
 </body>
 </html>
